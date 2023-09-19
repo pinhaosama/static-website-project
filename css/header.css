@@ -46,8 +46,18 @@ header input {
     margin-top: 6px;
 }
 
+.bigMenu {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    list-style-type: none;
+    width: 20vw;
+    margin-right: 30px;
+}
+
 .menu {
     display: flex;
+    flex-direction: column ;
     position: absolute;
     top: 0;
     left: 0;
@@ -55,6 +65,7 @@ header input {
     height: 100vh;
     list-style-type: none;
     background-color: white;
+    z-index: 4;
 }
 
 #ham ~ .menu {
@@ -71,8 +82,20 @@ header input {
     display: flex;
     align-items: center;
     height: 60px;
-    border-bottom: 1px solid darkgray;
     width: 100%;
+}
+
+.menuItem p {
+    translate: 30px;
+    font-size: large;
+}
+
+.menuItem:hover {
+    background-color: lightgray;
+}
+
+#logo-x {
+    border-bottom: 1px solid darkgray;
 }
 
 .c-button {
@@ -96,6 +119,7 @@ header input {
 
 #hitbox {
     display: flex;
+    position: fixed;
     align-items: center;
     justify-content: center;
     width: 25px;
@@ -113,5 +137,8 @@ header input {
 @media (max-width: 700px) {
     .b-container {
         display: flex;
+    }
+    .bigMenu {
+        display: none;
     }
 }

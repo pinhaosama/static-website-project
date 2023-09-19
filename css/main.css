@@ -1,0 +1,89 @@
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+:root {
+    --bg-color: rgb(24,44,60);
+    --fds-blue-05: #ECF3FF;
+    --highlight: #3578E5;
+}
+
+.product {
+    display: flex;
+    flex-direction: row;
+    height: 70vw;
+    max-height: 730px;
+    padding: 30px;
+    gap: 20px;
+    background: linear-gradient(90deg, #262636 0%, var(--bg-color) 20%);
+}
+
+#ptexts {
+    position: absolute;
+    font-size: 5vw;
+    color: white;
+    z-index: 3;
+}
+
+#ptexts h1, p {
+    font-size: 80px;
+}   
+
+#title {
+    font-weight: 600;
+}
+
+#vrGoggles {
+    position: absolute;
+    height: 70vw;
+    max-height: 700px;
+    right: 10px;
+}
+
+.description {
+    background-color: white;
+    padding: 30px;
+    justify-content: center;
+    text-align: center;
+}
+
+.description h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.description p {
+    font-size: 20px;
+    color: #465A69;
+    max-width: 500px;
+    margin: auto;
+}
+
+@media (max-width: 700px) {
+    .product {
+        flex-direction: column;
+        height: 150vw;
+        max-height: 900px;
+    }
+    #ptexts {
+        position: relative;
+    }
+    #ptexts h1, p {
+        font-size: 10vw;
+    }
+    #vrGoggles {
+        position: relative;
+        height: 70vw; width: 70vw;
+        margin: auto;
+    }
+    .description {
+        text-align: left;
+    }
+    .description p {
+        max-width: 300px;
+        margin: 0;
+    }
+}

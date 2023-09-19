@@ -1,45 +1,170 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/header.css">
-    </head>
-    <body>
-        
-        <header>
-            <div>
-                <input id="ham" type="checkbox"/>
-                <label for="ham" class="b-container"><div class="m-button"></div></label>
-                <ul class="menu">
-                    <li id="logo-x" ><div id="hitbox" onclick="menuCollapse()"><div class="c-button"></div></div></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <input id="ham" type="checkbox" />
+            <label for="ham" class="b-container">
+                <div class="m-button"></div>
+            </label>
+            <ul class="bigMenu">
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+            </ul>
+            <ul class="menu">
+                <li id="logo-x">
+                    <h3>Érēmos</h3>
+                    <div id="hitbox" onclick="menuCollapse()">
+                        <div class="c-button"></div>
+                    </div>
+                </li>
+                <li class="menuItem">
+                    <p>test</p>
+                </li>
+                <li class="menuItem">
+                    <p>test</p>
+                </li>
+            </ul>
+        </div>
+        <h3>Érēmos</h3>
+        <div>
+            <button>kart</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="product">
+            <div id="ptexts">
+                <h1 id="title"> The powerful<br>Érēmos Misson 3.<br>Coming this fall.</h1>
+                <p>From C$4.99</p>
             </div>
+            <img id="vrGoggles" src="imgs/vr.png">
+        </div>
+        <div class="description">
+            <h1>Lorem Ipsum</h1>
+            <p id="productDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Commodo quis imperdiet massa tincidunt nunc pulvinar sapien
+                et ligula. Ultricies lacus sed turpis tincidunt id aliquet risus feugiat. Sed felis eget velit aliquet
+                sagittis id. Morbi quis commodo odio aenean sed adipiscing diam donec adipiscing. Malesuada fames ac
+                turpis egestas maecenas. Elementum nibh tellus molestie nunc non blandit massa enim. In cursus turpis
+                massa tincidunt dui ut ornare lectus sit. Sed turpis tincidunt id aliquet. Cras pulvinar mattis nunc sed
+                blandit libero volutpat sed.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="gridContainer">
             <h3>Érēmos</h3>
-            <div>
-                <button>kart</button>
+            <div id="item1">
+                <h5>About Us</h5>
+                <div><input class="col" id="col1" type="checkbox" /><label for="col1" class="colButton"><img id="cIcon" src="imgs/arrow.png" alt="collapse icon"></label>
+                    <ul class="footerList">
+                        <li>lorem</li>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                    </ul>
+                </div> 
             </div>
-        </header>
-
-        <main>
-            <div class="product">
-                <div id="ptexts">
-                    <h1 id="title"> The powerful<br>Érēmos Misson 3.<br>Coming this fall.</h1>
-                    <p>From C$4.99</p>
-                </div>
-                <img id="vrGoggles" src="imgs/vr.png">
+            <div id="item2">
+                <h5>FAQ</h5>
+                <div><input class="col" id="col2" type="checkbox" /><label for="col2" class="colButton"><img id="cIcon" src="imgs/arrow.png" alt="collapse icon"></label>
+                    <ul class="footerList">
+                        <li>lorem</li>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                    </ul>
+                </div> 
             </div>
-        </main>
-        
-        <footer></footer>
+            <div id="item3">
+                <h5>Contact Us</h5>
+                <div><input class="col" id="col3" type="checkbox" /><label for="col3" class="colButton"><img id="cIcon" src="imgs/arrow.png" alt="collapse icon"></label>
+                    <ul class="footerList">
+                        <li>lorem</li>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                    </ul>
+                </div> 
+            </div>
+            <div id="item4">
+                <h5>Reviews</h5>
+                <div><input class="col" id="col4" type="checkbox" /><label for="col4" class="colButton"><img id="cIcon" src="imgs/arrow.png" alt="collapse icon"></label>
+                    <ul class="footerList">
+                        <li>lorem</li>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                    </ul>
+                </div> 
+            </div>
+            <div id="item5">
+                <h5>Footer Stuff</h5>
+                <div><input class="col" id="col5" type="checkbox" /><label for="col5" class="colButton"><img id="cIcon" src="imgs/arrow.png" alt="collapse icon"></label>
+                    <ul class="footerList">
+                        <li>lorem</li>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                    </ul>
+                </div> 
+            </div>
+            <div id="item6">
+                <h5>Lorem-Ipsum</h5>
+                <div><input class="col" id="col6" type="checkbox" /><label for="col6" class="colButton"><img id="cIcon" src="imgs/arrow.png" alt="collapse icon"></label>
+                    <ul class="footerList">
+                        <li>lorem</li>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                    </ul>
+                </div> 
+            </div>
+            <div id="item7">
+                <h5>Lorem-Ipsum</h5>
+                <div><input class="col" id="col7" type="checkbox" /><label for="col7" class="colButton"><img id="cIcon" src="imgs/arrow.png" alt="collapse icon"></label>
+                    <ul class="footerList">
+                        <li>lorem</li>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                    </ul>
+                </div> 
+            </div>
+            <div id="item8">
+                <h5>Lorem-Ipsum</h5>
+                <div><input class="col" id="col8" type="checkbox" /><label for="col8" class="colButton"><img id="cIcon" src="imgs/arrow.png" alt="collapse icon"></label>
+                    <ul class="footerList">
+                        <li>lorem</li>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                    </ul>
+                </div> 
+            </div>
+            <div id="item9">
+                <h5>Lorem-Ipsum</h5>
+                <div><input class="col" id="col9" type="checkbox" /><label for="col9" class="colButton"><img id="cIcon" src="imgs/arrow.png" alt="collapse icon"></label>
+                    <ul class="footerList">
+                        <li>lorem</li>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                    </ul>
+                </div> 
+            </div>
+        </div>
+    </footer>
 
-        <script src="script.js" async defer></script>
-    </body>
+    <script src="script.js" async defer></script>
+</body>
+
 </html>
