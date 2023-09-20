@@ -1,1 +1,3 @@
-# static-website-project
+VR Headset Showcase Website
+
+This is a straightforward VR headset showcase website project created using HTML, CSS, and JavaScript. It offers an immersive exploration of various VR headsets, complete with interactive 360° views, detailed product descriptions, and user reviews. To try it out locally, simply clone the repository, launch a local web server, and access the website through your browser. Contributions and feedback are always welcome as we continue to enhance this virtual reality experience. 
