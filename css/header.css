@@ -5,6 +5,7 @@ header {
     height: 80px;
     width: 100vw;
     padding: 20px;
+    padding-right: 10vw; padding-left: 10vw;
     background-color: white;
 }
 
@@ -51,8 +52,17 @@ header input {
     justify-content: space-between;
     flex-direction: row;
     list-style-type: none;
-    width: 20vw;
+    width: fit-content;
     margin-right: 30px;
+    gap: 20px;
+}
+
+.bigMenu li {
+    padding: 5px;
+}
+
+.bigMenu li:hover {
+    background-color: lightgrey;
 }
 
 .menu {
@@ -132,6 +142,10 @@ header input {
     .c-button, .c-button::before {
         background-color: var(--highlight);
     }
+}
+
+#logo-x h3 {
+    margin-right: 30px;
 }
 
 @media (max-width: 700px) {
