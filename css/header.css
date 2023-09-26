@@ -65,6 +65,12 @@ header input {
     background-color: lightgrey;
 }
 
+.bigMenu li a {
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
 .menu {
     display: flex;
     flex-direction: column ;
@@ -145,7 +151,7 @@ header input {
 }
 
 #logo-x h3 {
-    margin-right: 30px;
+    margin-left: 30px;
 }
 
 @media (max-width: 700px) {
