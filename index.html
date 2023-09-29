@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
+    <title>Érēmos</title>
+    <meta name="description" content="Landing page for the Érēmos website">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
@@ -16,12 +16,14 @@
 
 <body>
 
+    <!--Hello World!-->
+
     <header>
         <div>
-            <input id="ham" type="checkbox" />
-            <label for="ham" class="b-container">
-                <div class="m-button"></div>
-            </label>
+            <input id="ham" type="checkbox">
+            <div onclick="menuExpand()" class="b-container">
+                <label for="ham" class="m-button"></label>
+            </div>
             <ul class="bigMenu">
                 <li><a href="vr1.html">Mission 2</a></li>
                 <li><a href="vr1.html">Mission Pro</a></li>
@@ -42,8 +44,8 @@
             </ul>
         </div>
         <h3>Érēmos</h3>
-        <div>
-            <button>kart</button>
+        <div id="cartBox">
+            <img id="cart" src="imgs/shopping-cart.png" alt="a cart icon that does not work">
         </div>
     </header>
 
@@ -53,7 +55,7 @@
                 <h1 id="title"> The powerful<br>Érēmos Misson 3.<br>Coming this fall.</h1>
                 <p>From C$4.99</p>
             </div>
-            <img id="vrGoggles" src="imgs/vr.png">
+            <img id="vrGoggles" src="imgs/vr.png" alt="Érēmos Misson 3 vr goggles">
         </div>
         <div class="description">
             <h1>Lorem Ipsum</h1>
@@ -72,7 +74,7 @@
             <h3>Érēmos</h3>
             <div id="item1">
                 <h5>About Us</h5>
-                <div><input class="col" id="col1" type="checkbox" /><label for="col1" class="colButton"><img id="cIcon" src="imgs/arrow.png" alt="collapse icon"></label>
+                <div><input class="col" id="col1" type="checkbox" ><label for="col1" class="colButton"><img class="cIcon" src="imgs/arrow.png" alt="collapse icon"></label>
                     <ul class="footerList">
                         <li>lorem</li>
                         <li>lorem</li>
@@ -82,8 +84,8 @@
             </div>
             <div id="item2">
                 <h5>FAQ</h5>
-                <div><input class="col" id="col2" type="checkbox" /><label for="col2" class="colButton"><img id="cIcon" src="imgs/arrow.png" alt="collapse icon"></label>
-                    <ul class="footerList" id="fl2">
+                <div><input class="col" id="col2" type="checkbox" ><label for="col2" class="colButton"><img class="cIcon" src="imgs/arrow.png" alt="collapse icon"></label>
+                    <ul class="footerList" id="fl22">
                         <li>lorem</li>
                         <li>lorem</li>
                         <li>lorem</li>
@@ -92,8 +94,8 @@
             </div>
             <div id="item3">
                 <h5>Contact Us</h5>
-                <div><input class="col" id="col3" type="checkbox" /><label for="col3" class="colButton"><img id="cIcon" src="imgs/arrow.png" alt="collapse icon"></label>
-                    <ul class="footerList" id="fl3">
+                <div><input class="col" id="col3" type="checkbox" ><label for="col3" class="colButton"><img class="cIcon" src="imgs/arrow.png" alt="collapse icon"></label>
+                    <ul class="footerList" id="fl33">
                         <li>lorem</li>
                         <li>lorem</li>
                         <li>lorem</li>
@@ -102,7 +104,7 @@
             </div>
             <div id="item4">
                 <h5>Reviews</h5>
-                <div><input class="col" id="col4" type="checkbox" /><label for="col4" class="colButton"><img id="cIcon" src="imgs/arrow.png" alt="collapse icon"></label>
+                <div><input class="col" id="col4" type="checkbox" ><label for="col4" class="colButton"><img class="cIcon" src="imgs/arrow.png" alt="collapse icon"></label>
                     <ul class="footerList">
                         <li>lorem</li>
                         <li>lorem</li>
@@ -112,8 +114,8 @@
             </div>
             <div id="item5">
                 <h5>Footer Stuff</h5>
-                <div><input class="col" id="col5" type="checkbox" /><label for="col5" class="colButton"><img id="cIcon" src="imgs/arrow.png" alt="collapse icon"></label>
-                    <ul class="footerList" id="fl2">
+                <div><input class="col" id="col5" type="checkbox" ><label for="col5" class="colButton"><img class="cIcon" src="imgs/arrow.png" alt="collapse icon"></label>
+                    <ul class="footerList" id="fl25">
                         <li>lorem</li>
                         <li>lorem</li>
                         <li>lorem</li>
@@ -122,8 +124,8 @@
             </div>
             <div id="item6">
                 <h5>Lorem-Ipsum</h5>
-                <div><input class="col" id="col6" type="checkbox" /><label for="col6" class="colButton"><img id="cIcon" src="imgs/arrow.png" alt="collapse icon"></label>
-                    <ul class="footerList" id="fl3">
+                <div><input class="col" id="col6" type="checkbox" ><label for="col6" class="colButton"><img class="cIcon" src="imgs/arrow.png" alt="collapse icon"></label>
+                    <ul class="footerList" id="fl36">
                         <li>lorem</li>
                         <li>lorem</li>
                         <li>lorem</li>
@@ -132,7 +134,7 @@
             </div>
             <div id="item7">
                 <h5>Lorem-Ipsum</h5>
-                <div><input class="col" id="col7" type="checkbox" /><label for="col7" class="colButton"><img id="cIcon" src="imgs/arrow.png" alt="collapse icon"></label>
+                <div><input class="col" id="col7" type="checkbox" ><label for="col7" class="colButton"><img class="cIcon" src="imgs/arrow.png" alt="collapse icon"></label>
                     <ul class="footerList">
                         <li>lorem</li>
                         <li>lorem</li>
@@ -142,8 +144,8 @@
             </div>
             <div id="item8">
                 <h5>Lorem-Ipsum</h5>
-                <div><input class="col" id="col8" type="checkbox" /><label for="col8" class="colButton"><img id="cIcon" src="imgs/arrow.png" alt="collapse icon"></label>
-                    <ul class="footerList" id="fl2">
+                <div><input class="col" id="col8" type="checkbox" ><label for="col8" class="colButton"><img class="cIcon" src="imgs/arrow.png" alt="collapse icon"></label>
+                    <ul class="footerList" id="fl28">
                         <li>lorem</li>
                         <li>lorem</li>
                         <li>lorem</li>
@@ -152,8 +154,8 @@
             </div>
             <div id="item9">
                 <h5>Lorem-Ipsum</h5>
-                <div><input class="col" id="col9" type="checkbox" /><label for="col9" class="colButton"><img id="cIcon" src="imgs/arrow.png" alt="collapse icon"></label>
-                    <ul class="footerList" id="fl3">
+                <div><input class="col" id="col9" type="checkbox" ><label for="col9" class="colButton"><img class="cIcon" src="imgs/arrow.png" alt="collapse icon"></label>
+                    <ul class="footerList" id="fl39">
                         <li>lorem</li>
                         <li>lorem</li>
                         <li>lorem</li>
