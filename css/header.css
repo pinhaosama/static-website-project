@@ -23,7 +23,8 @@ header input {
     align-items: center;
 }
 
-.b-container:hover {
+.b-container:hover, .m-button:hover {
+    cursor: pointer;
     .m-button, .m-button::before, .m-button::after {
         background-color: var(--highlight);
     }
@@ -150,6 +151,33 @@ header input {
     }
 }
 
+#cartBox {
+    display: block;
+    padding: 30px;
+}
+
+#cartBox:hover {
+    #cart {
+        animation: 0.5s move forwards;
+    }
+}
+
+#cartBox:not(:hover) {
+    #cart {
+        animation: 0.5s evom ease-out;
+    }
+}
+
+#cart {
+    position: absolute;
+    top: 27.5px;
+    height: 30px;
+    width: 30px;
+}
+
+#cart:hover {
+}
+
 #logo-x h3 {
     margin-left: 30px;
 }
@@ -161,4 +189,14 @@ header input {
     .bigMenu {
         display: none;
     }
+}
+
+@keyframes move {
+    0%{translate: 0%;}
+    100%{transform: translate(300%);}
+}
+
+@keyframes evom {
+    0%{transform: translate(300%);}
+    100%{translate: 0%;}
 }

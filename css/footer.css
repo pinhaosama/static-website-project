@@ -52,11 +52,11 @@ footer h3 {
     background-color: lightgray;
 }
 
-#fl2 {
+[id*='fl2'] {
     left: 34vw;
 }
 
-#fl3 {
+[id*='fl3'] {
     left: 66vw;
 }
 
@@ -68,7 +68,7 @@ footer h3 {
     display: flex;
 }
 
-#cIcon {
+.cIcon {
     height: 10px;
 }
 
